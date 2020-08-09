@@ -13,7 +13,7 @@ namespace AAAuth.Controllers
         public string Name { get; set; }
     }
 
-    [Authorize]
+    [Authorize("Denied")]
     [ApiController]
     [Route("[controller]")]
     public class WhoamiController : ControllerBase
